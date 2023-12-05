@@ -9,40 +9,30 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play My Second Attempt.</tw-noscript></noscript></tw-story>
-<tw-storydata name="My Second Attempt" startnode="1" creator="Twine" creator-version="2.8.0" format="Harlowe" format-version="3.3.7" ifid="63AFA1C7-3A38-4FD0-BA6C-F7432A7D8B66" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="hello" tags="" position="300,600" size="100,100">(set: $name to (prompt: &quot;Hello! My name is Charlie. How may I address you?&quot;, &quot;&quot;))
+<tw-storydata name="My Second Attempt" startnode="1" creator="Twine" creator-version="2.8.0" format="Harlowe" format-version="3.3.7" ifid="63AFA1C7-3A38-4FD0-BA6C-F7432A7D8B66" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="hello" tags="" position="300,500" size="100,100">(set: $score to 0)
+(set: $name to (prompt: &quot;Hello! My name is Charlie. How may I address you?&quot;, &quot;&quot;))
 Good morning $name! 
 
-Thank you for accepting our invitation to interview for a consulting position here at the Houston Zoo today.
-
-We saw that you have extensive animal training experience on your resume.
+Thank you for accepting our invitation to interview today for a consulting position here at our zoo.
 
 We have been having problems with the behavior of some of our animals.
 
-We want someone to help our staff become better at managing the behavior of our animals.
+We saw that you had extensive animal training experience on your resume. 
 
-For every successful staff training session, we will (text-colour:green)[deposit 50 dollars] in your bank account.
+We want you to help our staff become better at managing the behavior of our animals.
 
-However, if the training goes poorly, I&#39;m afraid we will be forced to (text-colour:red)[withdraw 50 dollars] from your bank account.
+`[How do you respond?]`
 
-If you accept the terms of this arrangement, we have five staff members that we would like you to work with today.
+[[Tell me more about the position.|terms]]
+[[That doesn&#39;t sound like something I can help you with.|quitting]]
 
-If you are successful with these five staff members today, you could earn 250 dollars!
+Your current (text-colour:green)[bank account balance] is $$score dollars.</tw-passagedata><tw-passagedata pid="2" name="staff" tags="" position="500,600" size="100,100">$name, we really appreciate you working with our staff today.
 
-Do you accept our offer?
-
-[[Accept offer.|staff]]
-[[Decline offer.|quitting]]
-[[Try to haggle for more money.|stubborn]]
-
-(set: $score to 0)Your current (text-colour:green)[bank account balance] is $score dollars.
-
-
-
-
-
-</tw-passagedata><tw-passagedata pid="2" name="staff" tags="" position="500,600" size="100,100">Again $name, we are really glad to have you here today!
+Memberships and ticket sales have been really down with the way the way the animals have been behaving
 
 Which staff member would you like to work with?
+
+`[How do you respond?]`
 
 [[Nemo|nemo]]
 [[Simba|simba]]
@@ -50,72 +40,105 @@ Which staff member would you like to work with?
 [[Dumbo|dumbo]]
 [[Winnie|winnie]]
 
-Your current (text-colour:green)[bank account balance] is $score dollars. </tw-passagedata><tw-passagedata pid="3" name="quitting" tags="" position="500,800" size="100,100">So, $nname, your current score is: $score.
+Your current (text-colour:green)[bank account balance] is $$score dollars. </tw-passagedata><tw-passagedata pid="3" name="quitting" tags="" position="500,800" size="100,100">So, $name, just to confirm, we are done for today?
+`[How do you respond?]`
+[[Yes.|goodbye]]
+[[No.|staff]]
 
-Do you really want to stop playing my game?
-
-[[Yes|goodbye]]
-[[No|staff]]</tw-passagedata><tw-passagedata pid="4" name="nemo" tags="" position="700,475" size="100,100">Buongiorno $name, My name is Nemo.
+Your current (text-colour:green)[bank account balance] is $$score dollars.</tw-passagedata><tw-passagedata pid="4" name="nemo" tags="" position="700,475" size="100,100">Buongiorno $name, My name is Nemo.
 I take care of the fish in our Aquarium.
-
+`[How do you respond?]`
 [[correct response|right]]
 [[incorrect response|wrong]]
-</tw-passagedata><tw-passagedata pid="5" name="right" tags="" position="900,600" size="100,100">(set: $score to it +50)(text-colour:green)[That worked!]
+</tw-passagedata><tw-passagedata pid="5" name="right" tags="" position="900,600" size="100,100">(set: $score to it +50)(text-colour:green)[Yay! That worked!]
 
 Good job $name!
 
-50 dollars have been deposited in your bank account.
+(text-colour:green)[$50 dollars] have been deposited in your bank account.
 
-[[Work with another staff member today|staff]]
+How would you like to proceed?
+
+`[How do you respond?]`
+
+[[Work with another staff member today.|staff]]
 [[Quit work for today.|quitting]]
 
-Your current (text-colour:green)[bank account balance] is $score dollars. </tw-passagedata><tw-passagedata pid="6" name="wrong" tags="" position="900,800" size="100,100">(set: $score to it -50)(text-colour:red)[That didn&#39;t work.]
+Your current (text-colour:green)[bank account balance] is $$score dollars. </tw-passagedata><tw-passagedata pid="6" name="wrong" tags="" position="900,800" size="100,100">(set: $score to it -50)(text-colour:red)[Um, that didn&#39;t work $name.]
 
-50 dollars has been removed from $name&#39;s bank account.
+Where did you say you completed your animal training degree again?
 
-[[Work with another staff member?|staff]]
-[[Quit work for today?|quitting]]
+(text-colour:red)[$50 dollars ]has been removed from your bank account.
 
-Your current (text-colour:green)[bank account balance] is $score dollars. </tw-passagedata><tw-passagedata pid="7" name="goodbye" tags="" position="300,800" size="100,100">Goodbye $name.
+How would you like to proceed?
 
-We hope you enjoyed your time with us..
+`[How do you respond?]`
+
+[[Work with another staff member today.|staff]]
+[[Quit work for today.|quitting]]
+
+Your current (text-colour:green)[bank account balance] is $$score dollars. </tw-passagedata><tw-passagedata pid="7" name="goodbye" tags="" position="300,800" size="100,100">Goodbye $name.
+
+Although breif, we appreciate your time with us today.
+
+`[As you turn to leave, you hear Charlie singing a song.]`
 
 I//’m so glad we had this time together,
 Just to have a laugh, or sing a song.
 Seems we just got started and before you know it
 Comes the time we have to say, ‘So long.’//
-	[[-Carol Burnette|
-https://youtube.com/shorts/SRK0d5zTXZI?si=GQnf5tj11SdQ2s7y]]
 
-Your current (text-colour:green)[bank account balance] is $score dollars. </tw-passagedata><tw-passagedata pid="8" name="simba" tags="" position="700,600" size="100,100">Guten tag $name, you may call me Simba.
+Your current (text-colour:green)[bank account balance] is $$score dollars. 
+
+(if: $score &gt;= 251)[Wait just a minute ... How did you earn more than 250 dollars? Did you work with the same person more than once? I&#39;m afraid I can&#39;t allow this overpayment. Let me contact our accounting department to fix that.]</tw-passagedata><tw-passagedata pid="8" name="simba" tags="" position="700,600" size="100,100">Guten tag $name, you may call me Simba.
 As you may have guessed, I&#39;m the lion keeper at this zoo.
-
+`[How do you respond?]`
 [[correct response|right]]
 [[incorrect response|wrong]]</tw-passagedata><tw-passagedata pid="9" name="wilbur" tags="" position="700,725" size="100,100">Howdy $name, I go by Wilber.
 I take care of the pigs in our peeting zoo.
-
+`[How do you respond?]`
 [[correct response|right]]
 [[incorrect response|wrong]]</tw-passagedata><tw-passagedata pid="10" name="dumbo" tags="" position="700,850" size="100,100">Ohayou $name, Please call me Dumbo.
 I imagine it won&#39;t surpise you to learn that I&#39;m the Elephant keeper at this zoo.
-
+`[How do you respond?]`
 [[correct response|right]]
 [[incorrect response|wrong]]</tw-passagedata><tw-passagedata pid="11" name="winnie" tags="" position="700,975" size="100,100">Bonjour mon ami $name! 
 My friends call me Winnie.
 I take care of the bears at this zoo.
-
+`[How do you respond?]`
 [[correct response|right]]
 [[incorrect response|wrong]]</tw-passagedata><tw-passagedata pid="12" name="stubborn" tags="" position="100,700" size="100,100">$name, I&#39;m afraid this is all the zoo can afford at this time.
 
-Ticket sales have been really down with the way the way the animals have been behaving.
+Memberships and ticket sales have been really down with the way the way the animals have been behaving.
 
-We were really hoping you could help us out within the confines of the current budget.
+We were really hoping you could help us out within the confines of our current budget.
 
 Shall we review the terms of the offer on the table again?
 
-Your current (text-colour:green)[bank account balance] is $score dollars.
+`[How do you respond?]`
 
-[[Yes, let me look at them again.|hello]]
-[[No, I&#39;m no longer interested in this position.|goodbye]]</tw-passagedata></tw-storydata>
+[[Yes, let me look at them again.|terms]]
+[[No, I&#39;m no longer interested in this position.|goodbye]]
+
+Your current (text-colour:green)[bank account balance] is $$score dollars.</tw-passagedata><tw-passagedata pid="13" name="terms" tags="" position="300,650" size="100,100">&#39;&#39;Job Description&#39;&#39;
+
+For every successful staff training session, we will (text-colour:green)[deposit $50 dollars] in your bank account.
+
+However, if the training goes poorly, I&#39;m afraid we will be forced to (text-colour:red)[withdraw $50 dollars] from your bank account.
+
+If you accept the terms of this offer, we have five staff members that we would like you to work with today.
+
+If you are successful with all five staff, you will earn $250 dollars!
+
+Do you accept our offer?
+
+`[How do you respond?]`
+
+[[Accept offer.|staff]]
+[[Decline offer.|quitting]]
+[[Try to haggle for more money.|stubborn]]
+
+Your current (text-colour:green)[bank account balance] is $$score dollars.
+</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
