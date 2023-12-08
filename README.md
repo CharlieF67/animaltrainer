@@ -3,6 +3,14 @@ https://charlief67.github.io/animaltrainer
 This was my first attempt at a Twine game. It was developed to complete an assignment in a game-based learning course.
 
 # Version history
+
+v.1.2 (12/7.2023)
+-Identified some images to use in my passages
+-Uploaded image files to my respository on GitHub so that I could link to them in my passages
+-Used this code <img src="https://charlief67.github.io/animaltrainer/zooanimals.jpg" width="100%"> to display images in a passage
+-Explored adding sound files, like a 'ding' for a correct respone and a 'buzzer' for an incorrect response
+-Decided it would be too complicated to incorporate sound files for this project
+
 v1.1 (12.6. 2023)
 -Further developed operant conditioning examples
 -Worked on narrative for examples
