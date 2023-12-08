@@ -11,10 +11,10 @@
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Animal Trainer.</tw-noscript></noscript></tw-story>
 <tw-storydata name="Animal Trainer" startnode="1" creator="Twine" creator-version="2.8.0" format="Harlowe" format-version="3.3.7" ifid="63AFA1C7-3A38-4FD0-BA6C-F7432A7D8B66" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="hello" tags="" position="300,500" size="100,100">(set: $score to 0)
 (set: $name to (prompt: &quot;Hello! My name is Charlie. How may I address you?&quot;, &quot;&quot;))
-##This is version 1.1.
-##This is a work in progress.
-##It has not been completed yet.
-
+#This is version 1.2.
+#This is a work in progress.
+#It has not been completed yet.
+&lt;img src=&quot;https://charlief67.github.io/animaltrainer/zooanimals.jpg&quot; width=&quot;100%&quot;&gt;
 Good morning $name! 
 
 Thank you for accepting our invitation to interview for our consulting position here at our zoo.
@@ -27,8 +27,6 @@ We saw that you had extensive animal training experience on your resume.
 
 We want you to help our staff become better animal trainers.
 
-`[How do you respond?]`
-
 [[Tell me more about the position.|terms]]
 [[That doesn&#39;t sound like something I can help you with.|quitting]]
 
@@ -38,8 +36,6 @@ Memberships and ticket sales have been really down with the way the way the anim
 
 Which staff member would you like to work with?
 
-`[How do you respond?]`
-
 [[Nemo|nemo]]
 [[Simba|simba]]
 [[Wilbur|wilbur]]
@@ -47,17 +43,19 @@ Which staff member would you like to work with?
 [[Winnie|winnie]]
 
 Your current (text-colour:green)[bank account balance] is $$score dollars. </tw-passagedata><tw-passagedata pid="3" name="quitting" tags="" position="500,800" size="100,100">So, $name, just to confirm, we are done for today?
-`[How do you respond?]`
+
 [[Yes.|goodbye]]
 [[No.|staff]]
 
-Your current (text-colour:green)[bank account balance] is $$score dollars.</tw-passagedata><tw-passagedata pid="4" name="nemo" tags="" position="700,475" size="100,100">Buongiorno $name, My name is Nemo.
+Your current (text-colour:green)[bank account balance] is $$score dollars.</tw-passagedata><tw-passagedata pid="4" name="nemo" tags="" position="700,475" size="100,100">&lt;img src=&quot;https://charlief67.github.io/animaltrainer/nemo.jpg&quot; width=&quot;100%&quot;&gt;
+
+Buongiorno $name, My name is Nemo.
 I take care of the fish in our aquarium.
 For some reason, the fish hide in the coral during the day, which dissapoints the guests.
 We want the fish to be visible to the guests.
 I read somewhere that I should try positivie reinforcement, but I don&#39;t know how to do that.
 What do you recommend?
-`[How do you respond?]`
+
 Deliver a mild shock to the fish every time they hide in the coral.
 Don&#39;t feed them when they are hiding in the coral.
 Feed them only when they are not hiding in the coral.
@@ -72,8 +70,6 @@ Good job $name!
 
 How would you like to proceed?
 
-`[How do you respond?]`
-
 [[Work with another staff member today.|staff]]
 [[Quit work for today.|quitting]]
 
@@ -84,8 +80,6 @@ Where did you say you completed your animal training degree again?
 (text-colour:red)[$50 dollars ]has been removed from your bank account.
 
 How would you like to proceed?
-
-`[How do you respond?]`
 
 [[Work with another staff member today.|staff]]
 [[Quit work for today.|quitting]]
@@ -103,26 +97,39 @@ Comes the time we have to say, ‘So long.’//
 
 Your current (text-colour:green)[bank account balance] is $$score dollars. 
 
-(if: $score &gt;= 251)[Wait just a minute ... How did you earn more than 250 dollars? Did you work with the same person more than once? I&#39;m afraid I can&#39;t allow this overpayment. Let me contact our accounting department to fix that.]</tw-passagedata><tw-passagedata pid="8" name="simba" tags="" position="700,600" size="100,100">Guten tag $name, you may call me Simba.
+(if: $score &gt;= 251)[Wait just a minute ... How did you earn more than 250 dollars? Did you work with the same person more than once? I&#39;m afraid I can&#39;t allow this overpayment. Let me contact our accounting department to fix that.]
+
+&lt;img src=&quot;https://charlief67.github.io/animaltrainer/carol.jpg&quot; width=&quot;100%&quot;&gt;</tw-passagedata><tw-passagedata pid="8" name="simba" tags="" position="700,600" size="100,100">
+&lt;img src=&quot;https://charlief67.github.io/animaltrainer/simba.jpg&quot; width=&quot;100%&quot;&gt;
+
+Guten tag $name, you may call me Simba.
 As you may have guessed, I&#39;m the lion keeper at this zoo.
 Lately, the lions have been scaring they guests. 
 They jump at the fence whenever a guest comes to visit.
 Nemo suggested I try positive punishment, but I don&#39;t know how to do that.
 What should I do?
-`[How do you respond?]`
+
 [[correct response|right]]
-[[incorrect response|wrong]]</tw-passagedata><tw-passagedata pid="9" name="wilbur" tags="" position="700,725" size="100,100">Howdy $name, I go by Wilber.
+[[incorrect response|wrong]]</tw-passagedata><tw-passagedata pid="9" name="wilbur" tags="" position="700,725" size="100,100">
+&lt;img src=&quot;https://charlief67.github.io/animaltrainer/wilbur.jpg&quot; width=&quot;100%&quot;&gt;
+
+Howdy $name, I go by Wilber.
 I take care of the pigs in our peeting zoo.
-`[How do you respond?]`
+
 [[correct response|right]]
-[[incorrect response|wrong]]</tw-passagedata><tw-passagedata pid="10" name="dumbo" tags="" position="700,850" size="100,100">Ohayou $name, Please call me Dumbo.
+[[incorrect response|wrong]]</tw-passagedata><tw-passagedata pid="10" name="dumbo" tags="" position="700,850" size="100,100">
+&lt;img src=&quot;https://charlief67.github.io/animaltrainer/dumbo.jpg&quot; width=&quot;100%&quot;&gt;
+
+Ohayou $name, Please call me Dumbo.
 I imagine it won&#39;t surpise you to learn that I&#39;m the Elephant keeper at this zoo.
-`[How do you respond?]`
+
 [[correct response|right]]
-[[incorrect response|wrong]]</tw-passagedata><tw-passagedata pid="11" name="winnie" tags="" position="700,975" size="100,100">Bonjour mon ami $name! 
+[[incorrect response|wrong]]</tw-passagedata><tw-passagedata pid="11" name="winnie" tags="" position="700,975" size="100,100">&lt;img src=&quot;https://charlief67.github.io/animaltrainer/winnie.jpg&quot; width=&quot;100%&quot;&gt;
+
+Bonjour mon ami $name! 
 My friends call me Winnie.
 I take care of the bears at this zoo.
-`[How do you respond?]`
+
 [[correct response|right]]
 [[incorrect response|wrong]]</tw-passagedata><tw-passagedata pid="12" name="stubborn" tags="" position="100,700" size="100,100">$name, I&#39;m afraid this is all the zoo can afford at this time.
 
@@ -131,8 +138,6 @@ Memberships and ticket sales have been really down with the way the way the anim
 We were really hoping you could help us out within the confines of our current budget.
 
 Shall we review the terms of the offer on the table again?
-
-`[How do you respond?]`
 
 [[Yes, let me look at them again.|terms]]
 [[No, I&#39;m no longer interested in this position.|goodbye]]
@@ -148,8 +153,6 @@ If you accept the terms of this offer, we have five staff members that we would 
 If you are successful with all five staff, you will earn $250 dollars!
 
 Do you accept our offer?
-
-`[How do you respond?]`
 
 [[Accept offer.|staff]]
 [[Decline offer.|quitting]]
