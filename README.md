@@ -4,7 +4,7 @@ This was my first attempt at a Twine game. It was developed to complete an assig
 
 # Version history
 
-v.1.2 (12/7.2023)
+v.1.2 (12.7.2023)
 -Identified some images to use in my passages
 -Uploaded image files to my respository on GitHub so that I could insert link to them in my passages
 -Used this code <img src="https://charlief67.github.io/animaltrainer/imagefilename.jpg" width="100%"> to display images in a passage
