@@ -11,28 +11,29 @@
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Animal Trainer.</tw-noscript></noscript></tw-story>
 <tw-storydata name="Animal Trainer" startnode="1" creator="Twine" creator-version="2.8.0" format="Harlowe" format-version="3.3.7" ifid="63AFA1C7-3A38-4FD0-BA6C-F7432A7D8B66" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="hello" tags="" position="300,500" size="100,100">(set: $score to 0)
 (set: $name to (prompt: &quot;Hello! My name is Charlie. How may I address you?&quot;, &quot;&quot;))
-#This is version 1.2.
-#This is a work in progress.
-#It has not been completed yet.
-&lt;img src=&quot;https://charlief67.github.io/animaltrainer/zooanimals.jpg&quot; width=&quot;100%&quot;&gt;
+&lt;img src=&quot;https://charlief67.github.io/animaltrainer/zooanimals.jpg&quot; width=&quot;50%&quot;&gt;
 Good morning $name! 
 
-Thank you for accepting our invitation to interview for our consulting position here at our zoo.
+Thank you for accepting our invitation to interview for our consulting position here at the zoo.
 
-We have been having problems with the behavior of some of our animals.
+We have been having problems with the behavior of our animals.
 
-Our staff could use some advice on how to better influence the behavior of our animals.
+Our staff could really use some advice on how to better shape animal behavior.
 
-We saw that you had extensive animal training experience on your resume. 
+We saw that you have extensive animal training experience on your resume. 
 
-We want you to help our staff become better animal trainers.
+You must tell me more about working with Steve Irwin sometime.
+
+Anyway, we want you to help our staff become better animal trainers.
 
 [[Tell me more about the position.|terms]]
 [[That doesn&#39;t sound like something I can help you with.|quitting]]
 
-Your current (text-colour:green)[bank account balance] is $$score dollars.</tw-passagedata><tw-passagedata pid="2" name="staff" tags="" position="500,600" size="100,100">$name, we really appreciate you working with our staff today.
+Your current (text-colour:green)[bank account balance] is $$score dollars.
 
-Memberships and ticket sales have been really down with the way the way the animals have been behaving
+(text-colour:grey)[Version 1.3 (12.8.2023)]</tw-passagedata><tw-passagedata pid="2" name="staff" tags="" position="500,600" size="100,100">$name, we really appreciate you working with our staff today!
+
+Memberships and ticket sales have been really down with the way the way the animals have been behaving.
 
 Which staff member would you like to work with?
 
@@ -47,102 +48,173 @@ Your current (text-colour:green)[bank account balance] is $$score dollars. </tw-
 [[Yes.|goodbye]]
 [[No.|staff]]
 
-Your current (text-colour:green)[bank account balance] is $$score dollars.</tw-passagedata><tw-passagedata pid="4" name="nemo" tags="" position="700,475" size="100,100">&lt;img src=&quot;https://charlief67.github.io/animaltrainer/nemo.jpg&quot; width=&quot;100%&quot;&gt;
+Your current (text-colour:green)[bank account balance] is $$score dollars.</tw-passagedata><tw-passagedata pid="4" name="nemo" tags="" position="700,475" size="100,100">&lt;img src=&quot;https://charlief67.github.io/animaltrainer/nemo.jpg&quot; width=&quot;50%&quot;&gt;
 
-Buongiorno $name, My name is Nemo.
+Buongiorno $name, my name is Nemo.
+
 I take care of the fish in our aquarium.
-For some reason, the fish hide in the coral during the day, which dissapoints the guests.
-We want the fish to be visible to the guests.
-I read somewhere that I should try positivie reinforcement, but I don&#39;t know how to do that.
-What do you recommend?
 
-Deliver a mild shock to the fish every time they hide in the coral.
-Don&#39;t feed them when they are hiding in the coral.
-Feed them only when they are not hiding in the coral.
-????
-[[correct response|right]]
-[[incorrect response|wrong]]
-</tw-passagedata><tw-passagedata pid="5" name="right" tags="" position="900,600" size="100,100">(set: $score to it +50)(text-colour:green)[Yay! That worked!]
+For some reason, our fish spend most of their time hiding in the coral, which dissapoints our guests.
+
+We want the fish to be out and more visible to our guests when they visit.
+
+Simba suggested I try &#39;&#39;(text-colour:blue)[positive reinforcement]&#39;&#39;   to shape the beavhior of the fish, but I don&#39;t know how to do that.
+
+How would I do that?
+
+[[Deliver a mild shock every time they hide in the coral.|wrong]]
+[[Don&#39;t feed them if they don&#39;t come out of the coral.|wrong]]
+[[Feed them only when they are visible to guests.|right]]
+[[Take all the coral out of the aquarium.|wrong]]
+
+(text-colour:grey)[[[Crap, I don&#39;t remember that one. I need to review my cheat sheet.|vocab]]]
+</tw-passagedata><tw-passagedata pid="5" name="right" tags="" position="900,600" size="100,100">(set: $score to it +50)(text-colour:green)[Yay!] 
+
+That worked as expected!
 
 Good job $name!
+&lt;img src=&quot;https://charlief67.github.io/animaltrainer/goodjob.gif&quot; width=&quot;15%&quot;&gt;
 
 (text-colour:green)[$50 dollars] have been deposited in your bank account.
 
-How would you like to proceed?
+(text-colour:grey)[How would you like to proceed?]
 
 [[Work with another staff member today.|staff]]
 [[Quit work for today.|quitting]]
 
-Your current (text-colour:green)[bank account balance] is $$score dollars. </tw-passagedata><tw-passagedata pid="6" name="wrong" tags="" position="900,800" size="100,100">(set: $score to it -50)(text-colour:red)[Um, that didn&#39;t work $name.]
+Your current (text-colour:green)[bank account balance] is $$score dollars. 
+
+&lt;img src=&quot;https://charlief67.github.io/animaltrainer/mariosuccess.gif&quot; width=&quot;15%&quot;&gt;</tw-passagedata><tw-passagedata pid="6" name="wrong" tags="" position="900,800" size="100,100">(set: $score to it -50)(text-colour:red)[Um, that didn&#39;t work in the way I expected $name.]
 
 Where did you say you completed your animal training degree again?
 
 (text-colour:red)[$50 dollars ]has been removed from your bank account.
 
-How would you like to proceed?
+(text-colour:grey)[How would you like to proceed?]
 
 [[Work with another staff member today.|staff]]
 [[Quit work for today.|quitting]]
 
-Your current (text-colour:green)[bank account balance] is $$score dollars. </tw-passagedata><tw-passagedata pid="7" name="goodbye" tags="" position="300,800" size="100,100">Goodbye $name.
+Your current (text-colour:green)[bank account balance] is $$score dollars. 
 
-Although breif, we appreciate your time with us today.
+&lt;img src=&quot;https://charlief67.github.io/animaltrainer/mariofail.gif&quot; width=&quot;25%&quot;&gt;</tw-passagedata><tw-passagedata pid="7" name="goodbye" tags="" position="300,800" size="100,100">Goodbye $name.
 
-`[As you turn to leave, you hear Charlie singing a song.]`
+Although brief, we appreciate your time with us today.
+
+Thank you!
+
+(text-colour:grey)[`[As you turn to leave, you hear Charlie singing a song.]`
 
 I//’m so glad we had this time together,
 Just to have a laugh, or sing a song.
 Seems we just got started and before you know it
-Comes the time we have to say, ‘So long.’//
+Comes the time we have to say, ‘So long.’//]
 
 Your current (text-colour:green)[bank account balance] is $$score dollars. 
 
 (if: $score &gt;= 251)[Wait just a minute ... How did you earn more than 250 dollars? Did you work with the same person more than once? I&#39;m afraid I can&#39;t allow this overpayment. Let me contact our accounting department to fix that.]
-
-&lt;img src=&quot;https://charlief67.github.io/animaltrainer/carol.jpg&quot; width=&quot;100%&quot;&gt;</tw-passagedata><tw-passagedata pid="8" name="simba" tags="" position="700,600" size="100,100">
-&lt;img src=&quot;https://charlief67.github.io/animaltrainer/simba.jpg&quot; width=&quot;100%&quot;&gt;
+&lt;img src=&quot;https://charlief67.github.io/animaltrainer/carol.gif&quot; width=&quot;25%&quot;&gt;
+&lt;img src=&quot;https://charlief67.github.io/animaltrainer/carol.jpg&quot; width=&quot;25%&quot;&gt;</tw-passagedata><tw-passagedata pid="8" name="simba" tags="" position="700,600" size="100,100">
+&lt;img src=&quot;https://charlief67.github.io/animaltrainer/simba.jpg&quot; width=&quot;50%&quot;&gt;
 
 Guten tag $name, you may call me Simba.
-As you may have guessed, I&#39;m the lion keeper at this zoo.
-Lately, the lions have been scaring they guests. 
-They jump at the fence whenever a guest comes to visit.
-Nemo suggested I try positive punishment, but I don&#39;t know how to do that.
-What should I do?
 
-[[correct response|right]]
-[[incorrect response|wrong]]</tw-passagedata><tw-passagedata pid="9" name="wilbur" tags="" position="700,725" size="100,100">
-&lt;img src=&quot;https://charlief67.github.io/animaltrainer/wilbur.jpg&quot; width=&quot;100%&quot;&gt;
+As you may have guessed, I&#39;m the lion keeper at this zoo.
+
+Lately, the lions have been scaring the guests.
+
+They run and jump at the guests whenever they get close to the enclosure.
+
+Fortunately, the fence is strong enough to prevent them from getting at the guests.
+
+But as you can imagine, the guests don&#39;t like that.
+
+Wilbur told me I should try &#39;&#39;(text-colour:blue)[positive punishment]&#39;&#39;, but I don&#39;t know how to do that.
+
+Do you have any advice for me?
+
+[[Give the lions some fresh meat every time they jump at the fence.|wrong]]
+[[Stop feeding the lions on days they jump at the fence.|wrong]]
+[[Spray the lions with water every time they jump at the fence.|right]]
+[[Require the guests to sign a consent waiver for dismemberment/death and take down the fence.|wrong]]
+
+(text-colour:grey)[[[Crap, I don&#39;t remember that one. I need to review my cheat sheet.|vocab]]]</tw-passagedata><tw-passagedata pid="9" name="wilbur" tags="" position="700,725" size="100,100">&lt;img src=&quot;https://charlief67.github.io/animaltrainer/wilbur.jpg&quot; width=&quot;50%&quot;&gt;
 
 Howdy $name, I go by Wilber.
-I take care of the pigs in our peeting zoo.
 
-[[correct response|right]]
-[[incorrect response|wrong]]</tw-passagedata><tw-passagedata pid="10" name="dumbo" tags="" position="700,850" size="100,100">
-&lt;img src=&quot;https://charlief67.github.io/animaltrainer/dumbo.jpg&quot; width=&quot;100%&quot;&gt;
+I used to work in our spider exhibit, but now I work with our pigs in our petting zoo.
 
-Ohayou $name, Please call me Dumbo.
-I imagine it won&#39;t surpise you to learn that I&#39;m the Elephant keeper at this zoo.
+We give the kids brushes and let them brush our pigs.
 
-[[correct response|right]]
-[[incorrect response|wrong]]</tw-passagedata><tw-passagedata pid="11" name="winnie" tags="" position="700,975" size="100,100">&lt;img src=&quot;https://charlief67.github.io/animaltrainer/winnie.jpg&quot; width=&quot;100%&quot;&gt;
+The pigs used to sit whenever a kid approached them with a brush.
+
+Lately, the pigs just run in circles around the kids chase them.
+
+Dumbo told me about something called &#39;&#39;(text-colour:blue)[negative reinforcement]&#39;&#39;, but I can&#39;t recall what he said about it.
+
+Do you have any ideas?
+
+[[Give the pigs apples when they run circles around the kids.|wrong]]
+[[Put shock collars on the pigs and shock them whenever they are sitting.|wrong]]
+[[Apply firm pressure on their rumps until they sit, then release the pressure.|right]]
+[[Put shock collars on the kids and shock them when they catch a pig.|wrong]]
+
+(text-colour:grey)[[[Crap, I don&#39;t remember that one. I need to review my cheat sheet.|vocab]]]</tw-passagedata><tw-passagedata pid="10" name="dumbo" tags="" position="700,850" size="100,100">&lt;img src=&quot;https://charlief67.github.io/animaltrainer/dumbo.jpg&quot; width=&quot;50%&quot;&gt;
+
+Ohayou $name, please call me Dumbo.
+
+I imagine it won&#39;t surpise you to learn that I&#39;m the Elephant keeper here at our zoo.
+
+The elephants here love our water sprinkers, so we leave them on all the time for them.
+
+Lately, the elephants have started throwing peanuts at the guests.
+
+Winnie said that &#39;&#39;(text-colour:blue)[negative punishement]&#39;&#39; should work on them, but I have no idea how to do that.
+
+Can you give me a suggestion?
+
+[[Only turn the spinkers on for a minute when the elephants throw a peanut.|wrong]]
+[[Give the guests peanuts to throw at the elepehants.|wrong]]
+[[Turn the sprinklers off for minute when the elephants throw a peanut.|right]]
+[[Shock the elephants every time they throw a peanut.|wrong]]
+
+(text-colour:grey)[[[Crap, I don&#39;t remember that one. I need to review my cheat sheet.|vocab]]]</tw-passagedata><tw-passagedata pid="11" name="winnie" tags="" position="700,975" size="100,100">&lt;img src=&quot;https://charlief67.github.io/animaltrainer/winnie.jpg&quot; width=&quot;50%&quot;&gt;
 
 Bonjour mon ami $name! 
+
 My friends call me Winnie.
-I take care of the bears at this zoo.
 
-[[correct response|right]]
-[[incorrect response|wrong]]</tw-passagedata><tw-passagedata pid="12" name="stubborn" tags="" position="100,700" size="100,100">$name, I&#39;m afraid this is all the zoo can afford at this time.
+I love honey and I take care of the bears at this zoo.
 
-Memberships and ticket sales have been really down with the way the way the animals have been behaving.
+Normally, the bears are very socail and play nicely with each.
+
+Lately, one of the bears has been starting fights with the other bears, which alarms the guests.
+
+Nemo suggested I try a &#39;&#39;(text-colour:blue)[negative punishment]&#39;&#39; approach on the bear that starts fights.
+
+I don&#39;t know what that means.
+
+Can you help?
+
+[[Give the bear some honey every time it starts a fight.|wrong]]
+[[Shock the bear every time it starts fighting.|wrong]]
+[[Take the bear out of the social group every time it starts a fight.|right]]
+[[Have the guests place bets on which bear will win the fight.|wrong]]
+
+(text-colour:grey)[[[Crap, I don&#39;t remember that one. I need to review my cheat sheet.|vocab]]]</tw-passagedata><tw-passagedata pid="12" name="stubborn" tags="" position="100,700" size="100,100">$name, I&#39;m afraid this is all we can afford at this time.
+
+Memberships and ticket sales have been really down with the way the animals have been behaving.
 
 We were really hoping you could help us out within the confines of our current budget.
 
-Shall we review the terms of the offer on the table again?
+I can see from the way you are dressed today, that you could really use the money.
 
-[[Yes, let me look at them again.|terms]]
+Anyway, shall we review the terms of the offer on the table again?
+
+[[Ouch. Yes, let me look at them again.|terms]]
 [[No, I&#39;m no longer interested in this position.|goodbye]]
 
-Your current (text-colour:green)[bank account balance] is $$score dollars.</tw-passagedata><tw-passagedata pid="13" name="terms" tags="" position="300,650" size="100,100">&#39;&#39;Job Description&#39;&#39;
+Your current (text-colour:green)[bank account balance] is $$score dollars.</tw-passagedata><tw-passagedata pid="13" name="terms" tags="" position="300,650" size="100,100">(text-colour:blue)[&#39;&#39;Job Description&#39;&#39;]
 
 For every successful staff training session, we will (text-colour:green)[deposit $50 dollars] in your bank account.
 
@@ -150,7 +222,7 @@ However, if the training goes poorly, I&#39;m afraid we will be forced to (text-
 
 If you accept the terms of this offer, we have five staff members that we would like you to work with today.
 
-If you are successful with all five staff, you will earn $250 dollars!
+If you are successful with all five staff, you could earn $250 dollars!
 
 Do you accept our offer?
 
@@ -159,7 +231,17 @@ Do you accept our offer?
 [[Try to haggle for more money.|stubborn]]
 
 Your current (text-colour:green)[bank account balance] is $$score dollars.
-</tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="14" name="vocab" tags="" position="500,400" size="100,100">(text-colour:red)[&#39;&#39;Cheat Sheet&#39;&#39;]
+
+(text-colour:blue)[&#39;&#39;Positive reinforcement&#39;&#39;] is when the consequence for adding a stimuls is an increase in a behavior. In this situation, the stimulus is a reinforcer, that when given as a consequence of a behavior, results in an increase in the behavior.
+
+(text-colour:blue)[&#39;&#39;Positivie punishiment&#39;&#39;] is when the consequence for adding a stimulus is a decrease in a behavior. In this situation, the stimulus is a punisher, that when given as a consequence of a behavior, results in a descrease in the behavior.
+
+(text-colour:blue)[&#39;&#39;Negative reinforcment&#39;&#39;] is when the consequence for removing a stimulus is an increase in a behavior. In this situation, the stimulus is a punisher, that when taken away as a consequence of a behavior, results in an increase in the behavior.
+
+(text-colour:blue)[&#39;&#39;Negative punishment&#39;&#39;] is when the consequence for removing a stimulus is a decresase in a behavior. In this situation, the stimulus is a reinforcer, that when taken away as a consequence of a behavior, results in a descrease in the behavior.
+
+[[Okay, I think I got it now.|staff]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
