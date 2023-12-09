@@ -4,6 +4,16 @@ This was my first attempt at a Twine game. It was developed to complete an assig
 
 # Version history
 
+v.1.3 (12.8.2023)
+-Fiddled with adjusting width percentages for all images until I was satisfied
+-Added success and failure animated gifs to correct and incorrect response passages
+-Added cheat sheet passage for those unfamiliar with operant conditioning
+-Finalized staff narratives and examples
+-Toyed with adding a background image to a stylesheet, but then decided against using one
+-Upload latest build to GitHub
+-Tested
+-Published link in Share Your Game discussion thread
+
 v.1.2 (12.7.2023)
 -Identified some images to use in my passages
 -Uploaded image files to my respository on GitHub so that I could insert link to them in my passages
